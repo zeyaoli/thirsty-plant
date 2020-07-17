@@ -40,26 +40,28 @@ port.on("error", () => {
 // if catches client application is not permitted then revoke the accessToken -->code: 348
 
 const userActivityWebhook = twitterWebhooks.userActivity({
-  serverUrl: "https://e746c849.ngrok.io",
+  // Fill out the url that you want to serve the data (i use ngrok for a virtual server)
+  serverUrl: "",
   route: "/twitter", //default : '/'
-  consumerKey: "YfxF46CrPTUsyiYzHhBuWjtG4",
-  consumerSecret: "NPNRsoQ7j0qjC6oFqjGjnGRz227sviLZs9VAEO4x9wVdTdtTdR",
-  accessToken: "356808904-u52DK9IkZK2BFL05Lziz0oCDKyQZqGU9anx9hbLK",
-  accessTokenSecret: "wA9Ij43BMBvuqiGgUhsecn2pEySbVe7QZJmk1sWzSCoR0",
+  // fill out the api key here
+  consumerKey: "",
+  consumerSecret: "",
+  accessToken: "",
+  accessTokenSecret: "",
   environment: "lsc", //default : 'env-beta'
   app,
 });
 
-// console.log("new @@@@")
-
 //Register your webhook url - just needed once per URL
-// Register it everytime it changes the ngrok website.
+// Register it every time it changes the ngrok website.
 // Only put subscribe function in then
 
+// ******************************
 // userActivityWebhook.register().then(() => {
 
 // });
 // userActivityWebhook.register();
+// *******************************
 
 userActivityWebhook
   .subscribe({
