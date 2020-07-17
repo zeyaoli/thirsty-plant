@@ -1,0 +1,25 @@
+{
+  "name": "npm_demo",
+  "version": "1.0.0",
+  "description": "learning npm",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot_stream.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "plant"
+  ],
+  "author": "Zeyao Li",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "serialport": "^8.0.5",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1",
+    "twitter-webhooks": "^0.3.2"
+  }
+}
